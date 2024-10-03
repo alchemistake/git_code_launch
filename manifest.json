@@ -1,0 +1,34 @@
+{
+    "required_api_version": "2",
+    "name": "Git Code Launch",
+    "description": "Lists all git repositories in a root folder, then opens with code",
+    "developer_name": "Alchemistake (Caner Caliskaner)",
+    "icon": "images/icon.png",
+    "options": {
+      "query_debounce": 0.2
+    },
+    "preferences": [
+      {
+        "id": "code_kw",
+        "type": "keyword",
+        "name": "Trigger",
+        "description": "Lists all git repositories in a root file, then opens with code",
+        "default_value": "code"
+      },
+      {
+        "id": "code_command",
+        "type": "text",
+        "name": "Editor",
+        "description": "Command to use if you are using a custom editor like Cursor",
+        "default_value": "code"
+      },
+      {
+        "id": "root_folder",
+        "type": "text",
+        "name": "Root folder",
+        "description": "Where to search the git projects",
+        "default_value": "~/Code"
+      }
+
+    ]
+  }
